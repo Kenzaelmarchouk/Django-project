@@ -1,0 +1,41 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SERVICE INPT </title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/deco.css' %}">
+</head>
+<body>
+	<a href="compt" title="here you will create your account" class="o">create user</a>
+     <h1><img src="{%static 'css/logo.png'%}"/><br>GO SERVICE  </h1>
+  
+     <p class="o1"> enter the user name and password of your account</p>
+     <p class="o1">if you not yet create an account, so click on create user</p>
+     <h2> to log in :</h2>
+     <div class="offset-3 col-md-6">
+     <form class="site_form" action="login" method="post">
+     	{%csrf_token %}
+     	<div class="form-group"><br>
+        <img class="o2" src="{%static 'css/user.png'%}"/><br>
+       {%for f in form%}<br>
+           <label>{{f.label_tag}}</label><br>
+           {{f}}<br>
+       {% endfor %}<br>
+     	</div>
+     	<input type="submit" value="log in"><br><br>
+     </form>
+ </div>
+ <p>if you forget your username or your password, so you can create a new account </p>
+   <div id='conteneur'>
+    <ul>
+      <li><img src="{%static 'css/inpt.jpg'%}" width='400' height='400' /></li>
+      <li><img src="{%static 'css/inter.jpg'%}" width='400' height='400' /></li>
+      <li><img src="{%static 'css/adm.jpg'%}" width='400' height='400' /></li>
+      <li><img src="{%static 'css/go.png'%}" width='400' height='400' /></li>
+      <li><img src="{%static 'css/here.jpg'%}" width='400' height='400' /></li>
+      <li><img src="{%static 'css/INPT1.jpg'%}" width='400' height='400' /></li>
+      <li><img src="{%static 'css/logo.png'%}" width='400' height='400' /></li>
+    </ul>
+  </div>
+</body>
+</html>

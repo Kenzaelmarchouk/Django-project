@@ -1,0 +1,25 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AMOA projet</title>
+  <link rel="stylesheet" type="text/css" href="{%static 'css1/de.css'%}">
+</head>
+<body>
+  <h1><img src="{% static 'css/logo.png' %}"/><br> GO SERVICE</h1>
+  <h2> welcome with us</h2>
+  <u1>
+  <div class="articles">
+  	{%for article in articles%}
+  	<div class="article">
+  		<h2><li>{{article.title}}</li></h2>
+      <img src="{{article.image.url}}"/>
+  		<p>{{article.body}}</p>
+  		<p>{{article.date}}</p>
+  	</div>
+  	{%endfor%}
+  </div>
+</u1>
+</body>
+</html>

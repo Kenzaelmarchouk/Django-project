@@ -1,0 +1,26 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SERVICE INPT</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/deco1.css'%}">
+	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1><img src="{%static 'css/logo.png'%}"/><br>GO SERVICE</h1>
+     <p>Create an account </p>
+     <p>Please! enter your user name and a password of 8 charateres </p>
+     <div class="offset-3 col-md-6">
+     <form  action="compt" method="post">{%csrf_token%}
+      <div class="form-group">
+       {%for f in form%}<br>
+           <label>{{f.label_tag}}</label><br>
+           {{f}}<br>
+       {% endfor %}<br>
+     	</div>
+     	<input type="submit" value="save"><br><br>
+     </form>
+ </div>
+
+</body>
+</html>

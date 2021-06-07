@@ -1,0 +1,36 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SERVICE INPT</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}">
+	<script src="{% static 'js/dyn.js' %}"></script>
+</head>
+<body>
+	  <a href= "detail" class="l1" title="here there is the formule of administarion service"> administarion service  </a>
+	  <a href="de1" class="l1" title="here there is the formule of boarding service "> boarding service   </a>
+	   <nav>
+	   	                <form class="logout-link" action="logout" method="post">
+            				{%csrf_token%}
+            				<button class="l1" type="submit" title="you will go back to login page">log out</button>
+            			</form>
+        </nav>
+     
+	<h1> <img src="{% static 'css/logo.png' %}"/><br> GO SERVICE </h1>
+	<div class="l2">
+	
+  		       <h2>hi</h2>
+  		    
+  	        
+	<h2>learn more:</h2>
+	<p><a href="act" title="learn more about administration service and boarding service">  about INPT services </a><br><br>
+	<a href="https://www.inpt.ac.ma/" >  about INPT</a></p>
+</div>
+	
+      <footer class="l4">&copy; all rights are conserved {% now 'd\ m\ Y' %} </footer>
+
+</body>
+</html>
+	
+

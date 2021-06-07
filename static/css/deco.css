@@ -1,0 +1,127 @@
+body{
+	background-image: url('log.jpg'); 
+	background-repeat: no-repeat;
+	background-position: 90% 70%;
+	background-color:#BDBDBD;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	
+	/*background-size: cover;*/
+	/*background-size: 400px;
+	background-size:50% auto;
+	background-size: 200px 25% */
+
+}
+h1{
+	top: 0px;
+	border: 3px white solid;
+	background-color: #000000;
+	text-decoration: none;
+	color: white;
+	/*width: 50%;*/
+	/*border-width: 2px;*/
+	padding: 20px;
+	margin-top: 0px;
+	font-size: 50px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding: 30px;
+	/*opacity: 0.6;*/
+	
+	
+}
+.o{
+	float: right;
+	display: inline-block;
+	margin-right: 2em;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	top:0px;
+	color: white;
+	margin-top: 50px;
+
+}
+
+a{
+	color:white;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.o1{
+	font-size: 25px;
+	margin-left: 50px;
+	color:#1C1C1C;
+
+	
+}
+form{
+	/*margin-top: 250px;*/
+  font-size: 25px;
+  margin-left: 350px;
+  border:3px white solid;
+  background-color: #81DAF5;
+  width: 50%;
+  text-align: center;
+  /*color: #192a56;*/
+  color:black;
+  height: 400px;
+  opacity: 0.6;
+  box-shadow: 0px 0px 25px 10px white;
+}
+h2{
+	margin-left: 50px;
+	font-size: 30px;
+	color:#1C1C1C;
+	 
+}
+button{
+	color:red;
+}
+img{
+	width: 95px;
+	height: 75px;
+}
+.o2{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+p{
+	margin-left: 50px;
+	color:white;
+	font-size: 25px;
+
+}
+.f{
+	color: red;
+}
+
+ul,li { margin:0; padding:0 }
+div#conteneur {      
+	width:900px; /* Soit 300px * 3 images */
+	height:300px;
+	overflow:hidden;
+	margin: 2em auto;
+	border: 1px solid white;
+	box-shadow: 0px 0px 25px 10px white;
+}
+ul{
+	display: table;
+	width:2700px; /* Soit 300px * 7 images */
+	animation: slide-image 10s ease 0s infinite alternate;
+}
+ul li{
+	display: table-cell;
+	width:300px;
+	height:300px;
+	text-align:center;
+	vertical-align:middle;
+}
+@keyframes slide-image{
+	from,20%  {margin-left:   0px;}
+	20%,40%   {margin-left:-220px;}
+	40%,60%   {margin-left:-440px;}
+	60%,80%   {margin-left:-900px;}
+	80%,to    {margin-left:-880px;}
+}
